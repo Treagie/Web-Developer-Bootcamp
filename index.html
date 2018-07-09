@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Script Demo</title>
-	<script src="indexscript.js""></script>
+	<title>Things I Need To Do</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/finaltodo.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<script type="text/javascript" src="Assets/js/lib/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<h1>Including JS Files</h1>
+	<div id="container">
+		<h1>To-Do List<span id="toggle-form"><i class="fas fa-plus"></i></span></h1>
+		<input type="text" placeholder="Add New To-Do">
+
+		<ul>
+			<li><span><i class="far fa-trash-alt"></i></span> Go To Potions Class</li>
+			<li><span><i class="far fa-trash-alt"></i></span> Visit Hagrid</li>
+			<li><span><i class="far fa-trash-alt"></i></span> Buy New Robes</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="assets/js/finaltodo.js"></script>
 </body>
 </html>

@@ -1,0 +1,89 @@
+body {
+	font-family: "roboto", sans-serif;
+	/* imported from ui Gradients website */
+	background: #005AA7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+	background-color: #2980b9;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal; /* alt: font-weight: 400; */
+}
+
+ul {
+	list-style: none; /* removes bullet points from list */
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+li:nth-child(2n){ /* Creates a pattern of 'every other' one */
+	background-color: #f7f7f7;
+}
+
+input {
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box; /* height and width contains padding but not margin  inc. moz etc*/
+	color: #2980b9;
+	border: 3px solid rgba(0,0,0,0); /* makes li elements flush to input box edge */
+}
+
+input:focus {
+	background-color: white;
+	border: 3px solid #2980b9;
+	outline: none; /* removes browser's auto outline around input box */
+}
+
+/* Styling the delete button + animation */
+li span {
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0; /* only has width when hovered over - see below */
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+/* Font Awesome Icons */
+.fa-plus {
+	float: right;
+}
+
+/* Style used in JS */
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+/* end */
+
+#container {
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	width: 360px;
+	margin: 100px auto;
+	background-color: #f7f7f7;
+}
+
+
